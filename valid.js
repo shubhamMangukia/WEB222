@@ -19,6 +19,12 @@ function handleChangeOther(){
     messageEle.appendChild(textBox);
 }
 
-
-
+function myFunction() {
+    var ele = document.getElementById("topnav");
+    if (ele.className === "topnav") {
+      ele.className += " responsive";
+    } else {
+      ele.className = "topnav";
+    }
+  }
 
