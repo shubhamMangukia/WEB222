@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Kanit:wght@600;700&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Shubham Mangukiya</title>
+  </head>
+
+  <body>
+    <!-- <header></header> -->
+    <nav class="topnav" id="topnav">
+      <a class="nav-btn" href="#about"> About Me</a>
+      <a class="nav-btn" href="#education">Education </a>
+      <a class="nav-btn" href="#contact">Contact Me</a>
+      <a class="nav-btn" href="#skills">My Skills</a>
+      <a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </nav>
+
+    <main>
+      <section id="about">
+        <div class="card">
+        
+          <img src="./IMG_1614.jpg" alt="SHubham" />
+          <div class="card_container">
+            <h1><b>Shubham Mangukiya</b></h1>
+            <p>Student</p>
+            <a class="submit-btn" href="./Resume_Shubham.docx" download>
+              <i class="fa-solid fa-file-arrow-down"></i> Resume
+            </a>
+            <a class="submit-btn" href="#contact"
+              ><i class="fa-solid fa-phone-volume"></i> Contact Me</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>About Me</h2>
+        <div class="row">
+          <aside class="column1">
+            <h3>Basic Information</h3>
+            <div>
+              NAME : SHUBHAM MANGUKIYA <br />
+              
+            </div>
+          </aside>
+          <article class="column2">
+            <div>
+              
+              <p>
+                I'm an international student who completed high school in India, 
+                excelling in subjects like physics, math, and chemistry. Now in Canada, 
+                I'm pursuing a computer programming diploma, fueled by my passion for 
+                technology and coding. With a strong foundation in science and a drive 
+                to explore the digital realm, I'm eager to merge my academic background 
+                with programming skills to innovate and create in the world of technology.
+              </p>
+              <b>Date: </b>Aug 18, 2023
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="row">
+          <aside class="column1">
+            <div>
+              <h5>2023 - 2024</h5>
+              <h3>Diploma</h3>
+            </div>
+          </aside>
+          <article class="column2">
+            <div>
+              <h3>Diploma</h3>
+              <h4>SENECA COLLEGE</h4>
+              <p>
+                Programming languages System methodologies Client and server
+                side development Design and maintenance of database systems Data
+                communication
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>My Skills And Qualifications</h2>
+        <div class="row">
+          <aside class="column1">
+            <h3>Skills</h3>
+          </aside>
+          
+          <article class="column2">
+            <div>
+              <ul>
+                <li>HTML, CSS, JS for interactive web apps</li>
+                <li>Software dev: design, code, test, debug</li>
+                <li>SQL: data storage, design, and retrieval</li>
+                <li>OOP: Understanding of OOP principles</li>
+              </ul>
+            </div>
+          </article>
+          
+          
+          
+        </div>
+        <div class="row">
+          <aside class="column1">
+            <div>
+              <h3>Qualifications</h3>
+            </div>
+          </aside>
+          <article class="column2">
+            <div>
+              
+              <ul>
+                <li>Analyzing complex issues, breaking them down, and developing effective solutions.</li>
+                <li>Thriving in team environments, contributing ideas, and communicating for shared goals.</li>
+                <li>Staying updated with the latest programming trends, languages, and technologies.</li>
+                <li>Assuming ownership, embracing responsibilities, and tackling challenges.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="form-container">
+          <form
+            id="form1"
+            action="https://httpbin.org/post"
+            method="post"
+            onsubmit="return validateInput()"
+          >
+            <fieldset>
+              <legend>CONTACT ME</legend>
+              <div class="table-row">
+                <div class="col-25">
+                  <label for="name">Name </label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="name" name="name" required />
+                </div>
+              </div>
+
+              <div class="table-row">
+                <div class="col-25">
+                  <label for="email">Email Address </label>
+                </div>
+                <div class="col-75">
+                  <input type="email" id="email" name="email" />
+                </div>
+              </div>
+
+              <div class="table-row">
+                <div class="col-25">
+                  <label for="address">Street Address </label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="address" name="address" />
+                </div>
+              </div>
+
+              <div class="table-row">
+                <div class="col-25">
+                  <label for="city">City </label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="city" name="city" />
+                </div>
+              </div>
+
+              <div class="table-row">
+                <div class="col-25">
+                  <label for="province">Province </label>
+                </div>
+                <div class="col-75">
+                  <input list="provinces" name="province" id="province" />
+                  <datalist id="provinces">
+                    <option value="Alberta"></option>
+                    <option value="British Columbia"></option>
+                    <option value="Manitoba"></option>
+                    <option value="New Brunswick"></option>
+                    <option value="Newfoundland and Labrador"></option>
+                    <option value="Northwest Territories"></option>
+                    <option value="Nova Scotia"></option>
+                    <option value="Nunavut"></option>
+                    <option value="Ontario"></option>
+                    <option value="Prince Edward Island"></option>
+                    <option value="Quebec"></option>
+                    <option value="Saskatchewan"></option>
+                    <option value="Yukon"></option>
+                  </datalist>
+                </div>
+              </div>
+
+              <div class="table-row">
+                <div class="col-25">
+                  <label for="aboutWhat">What is this about </label>
+                </div>
+                <div class="col-75">
+                  <fieldset>
+                    <ul id="aboutWhat">
+                      <li>
+                        <input
+                          type="radio"
+                          name="aboutWhat"
+                          id=""
+                          value="Job Offer "
+                        />Job Offer
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          name="aboutWhat"
+                          id=""
+                          value="School "
+                        />School
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          name="aboutWhat"
+                          id="other"
+                          value="Other"
+                          onchange="handleChangeOther()"
+                        />Other
+                        <div id="other-input-container"></div>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="table-row">
+                <p id="error"></p>
+                <div class="col-25">
+                  <label for="Postal">Postal Code </label>
+                </div>
+                <div class="col-75">
+                  <input type="text" name="Postal code" id="Postal" />
+                </div>
+              </div>
+
+              <div class="table-row">
+                <div class="col-25">
+                  <label for="message">Message</label>
+                </div>
+                <div class="col-75">
+                  <textarea name="message" id="message" rows="5"></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <div>
+              <button class="submit-btn" type="submit">
+                <i class="fa-regular fa-paper-plane"></i>
+                Send
+              </button>
+              <button class="submit-btn" type="reset">
+                <i class="fa-regular fa-trash-can"></i>Clear
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <article>
+        <p class="footer-p">
+          NAME : SHUBHAM MANGUKIYA <br />
+          EMAIL: smangukiya2@myseneca.ca<br />
+          PHONE: 647-897-2759 <br />
+        </p>
+      </article>
+    </footer>
+    <script src="./js/valid.js"></script>
+  </body>
+</html>
